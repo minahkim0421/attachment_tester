@@ -1,0 +1,38 @@
+body {
+    background-color:  rgba(192, 212, 255);
+}
+
+.grid-container {
+    display: grid;
+    grid-auto-columns: 1fr;
+    /* justify-content: center;
+    align-items: center; */
+    padding-top: 20vh;
+    gap: 20px;
+}
+
+.grid-child {
+    align-self: center;
+    padding: 50px;
+    font-size: 120px;
+    text-align: center;
+}
+
+.garamond {
+    font-family: 'EBGaramond08-Regular', serif;
+}
+
+a {
+    background-color: lemonchiffon;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    /* border-radius: 200px; */
+    padding: 20px;
+    font-size: 40px;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: pink;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Collect Manager</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="./index.html">Home</a>
+    </header>
+
+    <div>
+    <div id="word-container">
+        <div class="word-card" data-word="The">The</div>
+        <div class="word-card" data-word="can">can</div>
+        <div class="word-card" data-word="as">as</div>
+        <div class="word-card" data-word="are">are</div>
+        <div class="word-card" data-word="we">we</div>
+        <div class="word-card" data-word="am">am</div>
+        <div class="word-card" data-word="am">am</div>
+        <div class="word-card" data-word="as">as</div>
+        <div class="word-card" data-word="confident that">orange</div>
+        <div class="word-card" data-word="comitted">us</div>
+        <div class="word-card" data-word="to this job">us</div>
+        <div class="word-card" data-word="I">I</div>
+        <div class="word-card" data-word="I">I</div>
+        <div class="word-card" data-word="I">I</div>
+        <div class="word-card" data-word="like">like</div>
+        <div class="word-card" data-word="your">you</div>
+        <div class="word-card" data-word="your">you</div>
+        <div class="word-card" data-word="showcased">call</div>
+        <div class="word-card" data-word="my ability">close to</div>
+        <div class="word-card" data-word="the">the</div>
+        <div class="word-card" data-word="the">the</div>
+        <div class="word-card" data-word="and">and</div>
+        <div class="word-card" data-word="so">so</div>
+        <div class="word-card" data-word="therefore">because</div>
+        <div class="word-card" data-word="would">would</div>
+        <div class="word-card" data-word="really">really</div>
+        <div class="word-card" data-word="love to">love to</div>
+        <div class="word-card" data-word="work">be with</div>
+        <div class="word-card" data-word="desire">desire</div>
+        <div class="word-card" data-word="admire">admire</div>
+        <div class="word-card" data-word="as a graphic design student">sincere</div>
+        <div class="word-card" data-word="excited">care</div>
+        <div class="word-card" data-word="to apply">trust</div>
+        <div class="word-card" data-word="passionate">support</div>
+        <div class="word-card" data-word="your company">together</div>
+        <div class="word-card" data-word="valuable">warmth</div>
+        <div class="word-card" data-word="dream">dream</div>
+        <div class="word-card" data-word="appreciate">appreciate</div>
+        <div class="word-card" data-word="Adobe Creative Suite">appreciate</div>
+        <div class="word-card" data-word="inspirations">lovely</div>
+        <div class="word-card" data-word="inspirations">lovely</div>
+        <div class="word-card" data-word="I attached to this email.">need to</div>
+        <div class="word-card" data-word="skills">sweet</div>
+    </div>
+
+    <div id="popup" class="popup hidden">
+        <p class="garamond" style="font-size: 28px;">All set?</p>
+        <button id="noButton" class="garamond popup-child">No, go back</button>
+        <button id="yesButton" class="garamond popup-child">Yes, continue</button>
+    </div>
+
+    <div id="result" class="hidden">
+        <p style="font-size: 20px;">
+            Your attachment: <br>
+            <span id="sentence" style="color: white;"></span> 
+        </p>
+        <br>
+        <input type="email" id="email" placeholder="Enter email" class="garamond input-box">
+        <button id="sendEmail">Send Email</button>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

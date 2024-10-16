@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 10px;
+    padding: 15px;
+    height: 5%;
+    width: 5%;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+}
+
+header:hover {
+    background-color: rgba(192, 212, 255);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: auto;
+    font-size: 21px;
+}
+
+body {
+    font-family: 'EBGaramond08-Regular', serif;
+    height: 100vh;
+}
+
+.garamond {
+    font-family: 'EBGaramond08-Regular', serif;
+    font-size: 24px;
+}
+
+.maruburi {
+    font-family: 'MaruBuri-Regular', serif;
+    font-size: 24px;
+}
+
+/* .gowun-batang-regular {
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+} */
+
+#word-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.word-card {
+    position: absolute;
+    background-color: lemonchiffon;
+    border: 1px solid gray;
+    color: black;
+    font-size: 2rem;
+    padding: 10px;
+    /* border-radius: 5%; */
+    cursor: pointer;
+    text-align: center;
+    height: 50px;
+}
+
+@keyframes selected {
+    from {background-color: lemonchiffon;}
+    to {background-color: pink;}
+}
+
+.word-card:hover {
+    animation-name: selected;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* border-radius: 100px; */
+    transform: translate(-50%, -50%);
+    background-color: rgba(192, 212, 255);
+    z-index: 100;
+}
+
+.popup-child {
+    padding: 5px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.popup-child:hover {
+    background-color: pink;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(192, 212, 255);
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 200;
+}
+
+button {
+    padding: 10px;
+    font-family: 'EBGaramond08-Regular', serif;
+    font-size: 20px;
+}
+
+button:active {
+    outline: 1px solid white;
+    border-radius: 5px;
+    background-color: pink;
+}
+
+.input-box {
+    padding: 5px;
+    color: lightgray;
+    font-size: 20px;
+}
+
+input {
+    outline: 1px solid white;
+}
+
+input:active {
+    outline: 2px solid hotpink;
+    border-radius: 5px;
+}
