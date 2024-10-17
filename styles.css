@@ -82,16 +82,17 @@ header:hover {
     height: 50px;
 }
 
-@keyframes selected {
+/* @keyframes selected {
     from {background-color: lemonchiffon;}
     to {background-color: pink;}
-}
+} */
 
 .word-card:hover {
-    animation-name: selected;
+    /* animation-name: selected;
     animation-duration: 0.2s;
     animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
+    background-color: pink;
 }
 
 .popup {
