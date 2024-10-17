@@ -10,10 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let collectedWords = [];
     let isPopupVisible = false;
 
-    function playAudio(fileName) {
-        var audio = new Audio(fileName);
-        audio.play();
-    }
     
     function positionCards() {
         wordCards.forEach(card => {
@@ -41,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (checkProximity(card, mouseX, mouseY)) {
                     card.style.left = `${mouseX - card.offsetWidth / 2}px`;
                     card.style.top = `${mouseY - card.offsetHeight / 2}px`;
-                    playAudio('assets/hello.mp3')
 
                     const word = card.dataset.word;
                     if (!collectedWords.includes(word)) {
