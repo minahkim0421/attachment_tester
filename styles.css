@@ -4,21 +4,6 @@
     box-sizing: border-box;
 }
 
-header {
-    margin: 10px;
-    padding: 15px;
-    height: 5%;
-    width: 5%;
-    background-color: white;
-    border: 1px solid black;
-    text-align: center;
-}
-
-header:hover {
-    background-color: rgba(192, 212, 255);
-    cursor: pointer;
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -27,12 +12,37 @@ a {
 }
 
 body {
-    font-family: 'EBGaramond08-Regular', serif;
+    font-family: 'EBGaramond08', serif;
     height: 100vh;
+    background-image: url('assets/Week5pinkbg.png');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: "EBGaramond08";
+    src:local("EBGaramond08-Regular"),
+    url("EBGaramond08-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
+header {
+    margin: 20px;
+    padding: 10px;
+    height: 40px;
+    width: 80px;
+    background-color: rgba(192, 212, 255);
+    border: 1px solid black;
+    text-align: center;
+}
+
+header:hover {
+    cursor: pointer;
 }
 
 .garamond {
-    font-family: 'EBGaramond08-Regular', serif;
+    font-family: "EBGaramond08", serif;
     font-size: 24px;
 }
 
@@ -52,8 +62,12 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: #fff;
+    /* background-color: #fff; */
     overflow: hidden;
+}
+
+#word-container:hover {
+    cursor: url(assets/Week5cursor.png), pointer;
 }
 
 .word-card {
@@ -64,7 +78,6 @@ body {
     font-size: 2rem;
     padding: 10px;
     /* border-radius: 5%; */
-    cursor: pointer;
     text-align: center;
     height: 50px;
 }

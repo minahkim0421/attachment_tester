@@ -2,11 +2,17 @@ body {
     background-color:  rgba(192, 212, 255);
 }
 
+@font-face {
+    font-family: "EBGaramond08";
+    src:local("EBGaramond08-Regular"),
+    url("EBGaramond08-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
 .grid-container {
     display: grid;
     grid-auto-columns: 1fr;
-    /* justify-content: center;
-    align-items: center; */
     padding-top: 20vh;
     gap: 20px;
 }
@@ -14,12 +20,12 @@ body {
 .grid-child {
     align-self: center;
     padding: 50px;
-    font-size: 120px;
+    font-size: 110px;
     text-align: center;
 }
 
 .garamond {
-    font-family: 'EBGaramond08-Regular', serif;
+    font-family: 'EBGaramond08', serif;
 }
 
 a {
@@ -27,12 +33,11 @@ a {
     text-decoration: none;
     color: black;
     border: 2px solid black;
-    /* border-radius: 200px; */
     padding: 20px;
     font-size: 40px;
 }
 
 a:hover {
-    cursor: pointer;
+    cursor: url(assets/Week5cursor.png), pointer;
     background-color: pink;
 }
